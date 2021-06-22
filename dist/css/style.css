@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
+body {
+  background: url("../..//assets/store.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.progress-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 80vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.progress-bar ul {
+  text-align: center;
+}
+
+.progress-bar ul li {
+  display: inline-block;
+  width: 200px;
+}
+
+.progress-bar ul li::before {
+  content: "...................";
+  color: gray;
+  height: .5px;
+  width: 200px;
+  position: absolute;
+  top: 470px;
+  border: 1px solid dotted;
+}
+
+.progress-bar ul li:last-child::before {
+  content: "";
+}
+
+.progress-bar ul li p {
+  margin: 5px 0;
+}
+
+.progress-bar ul li img {
+  width: 80px;
+}
+
+.progress-bar ul li i {
+  color: #333;
+  margin-bottom: 8px;
+}
+/*# sourceMappingURL=style.css.map */

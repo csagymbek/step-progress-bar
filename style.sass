@@ -1,0 +1,44 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: sans-serif
+    font-weight: 100
+
+body
+    background: url("../..//assets/store.jpg")
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+    height: 100vh
+
+.progress-bar
+    display: flex
+    justify-content: center
+    height: 80vh
+    align-items: center
+
+    ul
+        text-align: center
+        li
+            display: inline-block
+            width: 200px
+            &::before
+                content: "..................."
+                color: gray
+                height: .5px
+                width: 200px
+                position: absolute
+                top: 470px
+                // left: 500px
+                border: 1px solid dotted
+            &:last-child::before
+                content: ""
+
+            p
+                margin: 5px 0
+            img
+                width: 80px
+            i
+                color: #333
+                margin-bottom: 8px
